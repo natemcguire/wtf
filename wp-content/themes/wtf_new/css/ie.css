@@ -1,0 +1,26 @@
+
+#sidebar .block .btn strong,
+#sidebar .block .btn,
+#sidebar .block img,
+#sidebar,
+#content .social a,
+footer .block .more span,
+footer .block .more,
+.subscribe .submit,
+.subscribe .text,
+.info-section .iphone .btn span,
+.info-section .block .btn,
+.info-section .iphone .btn,
+header .btn-sample a,
+header .btn-sample {behavior:url(css/PIE.htc);}
+body {min-width:960px;}
+.title-block {
+	-webkit-box-shadow:0 3px 3px #538593;
+	-moz-box-shadow:0 3px 3px #538593;
+	box-shadow:0 3px 3px #538593;
+}
+* +html .visual .add-nav li {
+	display:inline;
+	zoom:1;
+	padding:0 11px 0 12px;
+}
