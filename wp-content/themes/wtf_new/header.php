@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>What the Food</title>
+    <title><?php echo get_the_title(); ?></title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width">
@@ -20,7 +20,7 @@
     <header>
         <div class="holder">
             <div class="container_12">
-                <strong class="logo"><a href="#">What the Food</a></strong>
+                <strong class="logo"><a href="<?php get_site_url(); ?>">What the Food</a></strong>
                 <span class="btn-sample"><a href="#"><img src="<?php echo get_bloginfo('template_directory').'/'; ?>images/ico-01.png" width="13" height="12" alt="#"> SAMPLE RECIPES</a></span>
             </div><!-- container_12 -->
         </div><!-- holder -->

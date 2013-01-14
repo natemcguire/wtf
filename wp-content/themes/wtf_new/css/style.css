@@ -102,8 +102,8 @@ body{
 	min-width:320px;
 }
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #fcfcfa; color: #fff; text-shadow: none; }
+::selection { background: #fcfcfa; color: #fff; text-shadow: none; }
 
 a { color: #7c7c7c; text-decoration:none;}
 a:hover {text-decoration:underline;}
@@ -177,14 +177,16 @@ header .logo {
 	float:left;
 	width:190px;
 	height:34px;
-	text-indent:-9999px;
 	overflow:hidden;
-	background:url(../images/logo.png) no-repeat;
-	margin:8px 0 0 91px;
+	font: 28px/32px 'Pacifico', Helvetica, sans-serif;
+	margin:10px 0 0 91px;
+	text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.5);
 }
 header .logo a {
 	display:block;
 	height:100%;
+	color:#fcfcfa;
+	text-decoration: none;
 }
 header .btn-sample {
 	float:right;
@@ -224,7 +226,7 @@ header .btn-sample a {
 }
 header .btn-sample img {
 	float:left;
-	margin:4px 8px 0 0;
+	margin:1px 8px 0 0;
 }
 /* end header */
 h1 {
@@ -262,9 +264,9 @@ h5 {
 }
 .visual h1 {
 	font:73px/82px 'Pacifico', Helvetica, sans-serif;
-	color:#75542c;
+	color: rgba(117, 84, 44, .8);
 	margin:0 0 50px;
-	text-shadow:1px 1px 0 #c2a07a;
+	text-shadow:1px 2px 0 rgba(194, 160, 122, .9);
 	text-align:center;
 }
 .gallery {
@@ -763,12 +765,27 @@ h5 {
 /* end info-section */
 /* footer */
 footer {
-	max-width:940px;
-	padding:40px 20px;
+	max-width:100%;
+	padding:15px 20px;
 	margin:0 auto;
 	font-size:15px;
 	color:#999;
+	text-align: center;
 }
+#signup ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		text-align: center;
+	}
+#signup ul li {
+	display:inline;
+	margin: 0 80px;
+}
+#signup ul li a {
+	text-decoration: none;
+}
+
 footer .block {
 	background:url(../images/sep-01.png) repeat-x 0 100%;
 	padding:0 55px 45px 50px;
@@ -1179,6 +1196,13 @@ footer .copy {
 		display:block;
 		padding-left:0;
 	}
+	#signup ul li {
+		margin: 0 80px 0 0;
+		display: block;
+	}
+	#signup ul li {
+		padding-bottom: 10px;
+	}
 }
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
@@ -1315,10 +1339,17 @@ footer .copy {
 	.info-4 .iphone .ttl {margin-bottom:13px;}
 	.info-section .block .app-store {margin:0 auto;}
 	footer {
-		padding:46px 0;
-		font-size:10px;
+		padding:15px 20px;
+		font-size:16px;
 		line-height:15px;
 	}
+	#signup ul li {
+		margin: 10px 0;
+		display: block;
+
+	}
+
+
 	footer .block .newsletter {
 		font-size:20px;
 		line-height:28px;

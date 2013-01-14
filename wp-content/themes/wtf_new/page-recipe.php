@@ -87,10 +87,7 @@ Template Name: Recipe Landing Page
 				<div class="subscribe">
 					<form action="#">
 						<fieldset>
-							<div class="row">
-								<input type="text" class="text" value="Email Address...">
-							</div>
-							<a href="#appstore"><span class="submit"><input type="submit" value="GET ALL THE RECIPES"></span></a>
+							<a href="#appstore" class="btn" style="max-width:320px;"><span>GET ALL THE RECIPES</span></a>
 						</fieldset>
 					</form>
 				</div>
@@ -98,6 +95,7 @@ Template Name: Recipe Landing Page
 		</div><!-- holder -->
 	</section><!-- info-section -->
 	<section class="info-section info-4">
+		<a name="appstore"></a>
 		<div class="holder">
 			<div class="iphone">
 				<div class="box">

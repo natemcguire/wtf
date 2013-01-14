@@ -158,10 +158,7 @@
                 <div class="subscribe">
                     <form action="#">
                         <fieldset>
-                            <div class="row">
-                                <input type="text" class="text" value="Email Address...">
-                            </div>
-                            <span class="submit"><input type="submit" value="GET ALL THE RECIPES"></span>
+                            <a href="#appstore" class="btn" style="max-width:320px;"><span>GET ALL THE RECIPES</span></a>
                         </fieldset>
                     </form>
                 </div>

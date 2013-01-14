@@ -2,10 +2,7 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <section class="visual visual-in">
 		<div class="holder">
-			<h1><?php
-				$parent_title = get_the_title($post->post_parent);
-				echo $parent_title;
-				?>
+			<h1><?php echo get_field('cat_name');?>
 			</h1>
 			<div class="block">
 				<div class="frame">
@@ -86,10 +83,7 @@
 				<div class="subscribe">
 					<form action="#">
 						<fieldset>
-							<div class="row">
-								<input type="text" class="text" value="Email Address...">
-							</div>
-							<a href="#appstore"><span class="submit"><input type="submit" value="GET ALL THE RECIPES"></span></a>
+							<a href="#appstore" class="btn" style="max-width:320px;"><span>GET ALL THE RECIPES</span></a>
 						</fieldset>
 					</form>
 				</div>
@@ -97,6 +91,7 @@
 		</div><!-- holder -->
 	</section><!-- info-section -->
 	<section class="info-section info-4">
+		<a name="appstore"></a>
 		<div class="holder">
 			<div class="iphone">
 				<div class="box">

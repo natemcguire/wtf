@@ -92,7 +92,7 @@ Template Name: Landing Page
         </div><!-- holder -->
     </section><!-- visual -->
     <section class="heading">
-        <h2>What to cook for dinner in 90 seconds or less</h2>
+        <h2><a href="#appstore">What to cook for dinner in 90 seconds or less</a></h2>
     </section><!-- heading -->
     <section class="title-block">
         <h2>How does it work?</h2>
@@ -163,10 +163,7 @@ Template Name: Landing Page
                 <div class="subscribe">
                     <form action="#">
                         <fieldset>
-                            <div class="row">
-                                <input type="text" class="text" value="Email Address...">
-                            </div>
-                            <span class="submit"><input type="submit" value="GET ALL THE RECIPES"></span>
+                            <a href="#appstore" class="btn" style="max-width:320px;"><span>GET ALL THE RECIPES</span></a>
                         </fieldset>
                     </form>
                 </div>
@@ -174,6 +171,7 @@ Template Name: Landing Page
         </div><!-- holder -->
     </section><!-- info-section -->
     <section class="info-section info-4">
+        <a name="appstore"></a>
         <div class="holder">
             <div class="iphone">
                 <div class="box">

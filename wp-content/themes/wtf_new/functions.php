@@ -14,67 +14,15 @@ function register_my_menu() {
 
 add_action( 'init', 'create_post_type' );
 function create_post_type() {
-  register_post_type( 'Chicken Recipes',
+  register_post_type( 'Recipes',
     array(
       'labels' => array(
-        'name' => __( 'Chicken Recipes' ),
-        'singular_name' => __( 'Chicken Recipe' )
+        'name' => __( 'Recipes' ),
+        'singular_name' => __( 'Recipe' ),
+        'rewrite' => array('slug' => 'delicious-recipes'),
       ),
-    'public' => true,
-    'has_archive' => true,
-    'menu_position' => 5,
-    )
-  );
-  register_post_type( 'Beef Recipes',
-    array(
-      'labels' => array(
-        'name' => __( 'Beef Recipes' ),
-        'singular_name' => __( 'Beef Recipe' )
-      ),
-    'public' => true,
-    'has_archive' => true,
-    'menu_position' => 5,
-    )
-  );
-  register_post_type( 'Vegetarian Recipes',
-    array(
-      'labels' => array(
-        'name' => __( 'Vegetarian Recipes' ),
-        'singular_name' => __( 'Vegetarian Recipe' )
-      ),
-    'public' => true,
-    'has_archive' => true,
-    'menu_position' => 5,
-    )
-  );
-  register_post_type( 'Paleo Recipes',
-    array(
-      'labels' => array(
-        'name' => __( 'Paleo Recipes' ),
-        'singular_name' => __( 'Paleo Recipe' )
-      ),
-    'public' => true,
-    'has_archive' => true,
-    'menu_position' => 5,
-    )
-  );
-  register_post_type( 'Fish Recipes',
-    array(
-      'labels' => array(
-        'name' => __( 'Fish Recipes' ),
-        'singular_name' => __( 'Fish Recipe' )
-      ),
-    'public' => true,
-    'has_archive' => true,
-    'menu_position' => 5,
-    )
-  );
-  register_post_type( 'Pasta Recipes',
-    array(
-      'labels' => array(
-        'name' => __( 'Pasta Recipes' ),
-        'singular_name' => __( 'Pasta Recipe' )
-      ),
+      'taxonomies' => array('category'),
+
     'public' => true,
     'has_archive' => true,
     'menu_position' => 5,
